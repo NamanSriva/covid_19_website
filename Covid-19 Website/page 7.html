@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy</title>
+</head>
+<style>
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1520px;
+    width: 100%;
+    height: 60px;
+
+    margin: 0 auto;
+
+    background-color: #F3F2F2;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo img{
+    width: 60px;
+}
+.logo p {
+    font-weight: bold;
+    color: #6a149b;
+}
+footer{
+    max-width: 1520px;
+    height: 60px;
+   
+    margin: 0 auto;
+    background-color: #6a149b;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright p{
+    color: #FFF;
+}
+.chart{
+    width: 100%;
+    height: 70vh;
+    min-height: 700px;
+
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.stats{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('images/coronavirus.jpg');
+    background-size: cover;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:last-child{
+    padding-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #6a149b;
+    padding: 10px;
+}
+.health{
+    background-color: orange;  
+        position: relative;  
+        left: 0;  
+        right: 0;  
+        top: 20px;  
+        height: 100px;  
+        padding-top: 50px;
+        display: flexbox;  
+        align-items: flex-end;  
+        box-shadow: 0 0 30px 0 black;  
+        
+}
+.health * {  
+        display: inline; 
+ 
+</style>
+<body bgcolor="#1e1e30">
+    <nav class="health">
+        <h1 style="padding-left: 400px; font-size: 50px;">Unemployement due to COVID-19</h1>
+        </nav>
+        
+    <br><br>
+    <header>
+        <div class="logo">
+          <img src="images\logo.png" alt="" />
+          <p>COVID-19<br />STATS</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="page 1.html">HOME</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="stats">
+        <div class="chart">
+    <canvas id="axes_line_chart"></canvas>
+    </div>
+    </div>
+   
+    <footer>
+        <div class="footer-container">
+          <div class="copyright">
+            <p>Share of Workers Unemployed by Education Level</p>
+          </div>
+        </div>
+      </footer>
+      
+      <a href="page 8.html" style="color: white; font-size: 50px; float: right;"><I><U><B> Next</B></U></I></a>
+      <a href="page 6.html" style="color: white; font-size: 50px; float: left;"><I><U><B> Back</B></U></I></a>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js\economy1.js"></script>
+    </body>
+    </html>
+    
